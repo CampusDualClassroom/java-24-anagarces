@@ -19,16 +19,16 @@ public class Exercise24 {
     public static void printAndEmptyQueue(Queue<String> queue) {
         //primero mostramos por consola los elementos sin eliminarlos
         System.out.println("\nElementos de la coleccion");
-        queue.forEach((name)->{
-                System.out.println(name);
-            });
+        queue.forEach((name) -> {
+            System.out.println(name);
+        });
 
         //luego recorremos cada elemento y mientras no este vacia la coleccion,
         // eliminamos cada elemento y se muestran
 
         System.out.println("\nElementos eliminados");
-        queue.forEach((name)->{
-            while(!queue.isEmpty()){
+        queue.forEach((name) -> {
+            while (!queue.isEmpty()) {
 
                 System.out.println(queue.poll());
 
