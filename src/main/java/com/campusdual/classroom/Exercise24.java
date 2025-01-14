@@ -27,13 +27,11 @@ public class Exercise24 {
         // eliminamos cada elemento y se muestran
 
         System.out.println("\nElementos eliminados");
-        queue.forEach((name) -> {
-            while (!queue.isEmpty()) {
+        while (!queue.isEmpty()) {
 
-                System.out.println(queue.poll());
+            System.out.println(queue.poll());
 
-            }
-        });
+        }
     }
 
     public static void main(String[] args) {
