@@ -17,13 +17,7 @@ public class Exercise24 {
     }
 
     public static void printAndEmptyQueue(Queue<String> queue) {
-        //primero mostramos por consola los elementos sin eliminarlos
-        System.out.println("\nElementos de la coleccion");
-        queue.forEach((name) -> {
-            System.out.println(name);
-        });
-
-        //luego recorremos cada elemento y mientras no este vacia la coleccion,
+        //mientras no este vacia la coleccion,
         // eliminamos cada elemento y se muestran
 
         System.out.println("\nElementos eliminados");
@@ -36,11 +30,9 @@ public class Exercise24 {
 
     public static void main(String[] args) {
 
-        //creamos una nueva coleccion llamando al metodo correspondiente
-        Queue<String> myCustomQueue = createQueue();
-
         //se imprime la coleccion
-        printAndEmptyQueue(myCustomQueue);
+        //refactorizado
+        printAndEmptyQueue(createQueue());
     }
 
 }
